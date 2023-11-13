@@ -16,3 +16,4 @@ This file shows the association of each file with each problem
 - main13.rs: [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
 - main14.rs: [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)
 - main15.rs: [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
+- main16.rs: [Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/)
