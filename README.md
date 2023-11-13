@@ -14,5 +14,5 @@ This file shows the association of each file with each problem
 - main11.rs: [Divisor Game **](https://leetcode.com/problems/divisor-game/)
 - main12.rs: [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
 - main13.rs: [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
-
-[//]: # (- main14.rs: [Pascal's Triangle II]&#40;https://leetcode.com/problems/pascals-triangle-ii/&#41;)
+- main14.rs: [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)
+- main15.rs: [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
