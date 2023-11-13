@@ -1,5 +1,5 @@
 
-pub fn get_maximum_generated(n: i32) -> i32 {
+fn get_maximum_generated(n: i32) -> i32 {
     if n == 0 {
         return 0;
     } else if n == 1 {

@@ -1,5 +1,5 @@
 
-pub fn get_row(row_index: i32) -> Vec<i32> {
+fn get_row(row_index: i32) -> Vec<i32> {
     let mut ith_vec = vec![1];
     for i in 1..=row_index {
         let mut curr_vec = vec![0; (i + 1) as usize];

@@ -7,7 +7,7 @@
 // // // // // if yes, then it's false and check if it comes out true for other i
 // // // // // if no, then return true
 // // // // if no, then go to next
-pub fn divisor_game(n: i32) -> bool {
+fn divisor_game(n: i32) -> bool {
     if n == 1 {
         return false;
     } else if n == 2 {

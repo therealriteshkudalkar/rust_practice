@@ -1,6 +1,6 @@
 use std::cmp::min;
 
-pub fn min_cost_climbing_stairs(cost: &Vec<i32>) -> i32 {
+fn min_cost_climbing_stairs(cost: &Vec<i32>) -> i32 {
     let n = cost.len();
     let mut min_cost_ar = vec![0; n + 1];
     min_cost_ar[0] = 0;

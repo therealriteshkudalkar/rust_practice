@@ -17,3 +17,4 @@ This file shows the association of each file with each problem
 - main14.rs: [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/)
 - main15.rs: [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
 - main16.rs: [Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/)
+- main17.rs: [Is Subsequence](https://leetcode.com/problems/is-subsequence/)

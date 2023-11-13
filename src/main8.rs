@@ -1,4 +1,4 @@
-pub fn count_bits(n: i32) -> Vec<i32> {
+fn count_bits(n: i32) -> Vec<i32> {
     if n == 0 {
         return vec![0];
     } else if n == 1 {

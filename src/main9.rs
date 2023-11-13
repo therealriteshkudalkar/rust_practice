@@ -1,4 +1,4 @@
-pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
+fn generate(num_rows: i32) -> Vec<Vec<i32>> {
     if num_rows == 1 {
         return vec![vec![1]];
     }

@@ -1,4 +1,4 @@
-pub fn max_profit_naive(prices: &Vec<i32>) -> i32 {
+fn max_profit_naive(prices: &Vec<i32>) -> i32 {
     let mut max = 0;
     for i in 0..prices.len() {
         for j in (i + 1)..prices.len() {
@@ -11,7 +11,7 @@ pub fn max_profit_naive(prices: &Vec<i32>) -> i32 {
     return max;
 }
 
-pub fn max_profit(prices: &Vec<i32>) -> i32 {
+fn max_profit(prices: &Vec<i32>) -> i32 {
     // keep track of index of the cheapest stock as of yet
     // also keep track of the maximum profit
     let mut cheapest = prices[0];
