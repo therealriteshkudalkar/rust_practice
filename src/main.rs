@@ -17,6 +17,8 @@ mod main15;
 mod main16;
 mod main17;
 mod main18;
+mod main19;
+mod main20;
 
 fn main() {
     // take user input
@@ -38,5 +40,7 @@ fn main() {
     //main15::main15();
     //main16::main16();
     //main17::main17();
-    main18::main18();
+    //main18::main18();
+    //main19::main19();
+    main20::main20();
 }

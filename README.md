@@ -19,3 +19,5 @@ This file shows the association of each file with each problem
 - main16.rs: [Get Maximum in Generated Array](https://leetcode.com/problems/get-maximum-in-generated-array/)
 - main17.rs: [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
 - main18.rs: [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/)
+- main19.rs: [Generate Parenthesis](https://leetcode.com/problems/generate-parentheses/)
+- main20.rs: [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/?envType=study-plan-v2&envId=leetcode-75)
