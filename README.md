@@ -24,3 +24,4 @@ This file shows the association of each file with each problem
 - main21.rs: [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - main22.rs: [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)
 - main23.rs: [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
+- main24.rs: [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately)
