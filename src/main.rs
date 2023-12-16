@@ -20,11 +20,9 @@ mod main18;
 mod main19;
 mod main20;
 mod main21;
-<<<<<<< Updated upstream
-mod main23;
-=======
 mod main22;
->>>>>>> Stashed changes
+mod main23;
+
 
 fn main() {
     // take user input
