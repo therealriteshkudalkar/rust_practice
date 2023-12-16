@@ -20,5 +20,6 @@ This file shows the association of each file with each problem
 - main17.rs: [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
 - main18.rs: [Count Sorted Vowel Strings](https://leetcode.com/problems/count-sorted-vowel-strings/)
 - main19.rs: [Generate Parenthesis](https://leetcode.com/problems/generate-parentheses/)
-- main20.rs: [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/?envType=study-plan-v2&envId=leetcode-75)
+- main20.rs: [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
 - main21.rs: [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
+- main23.rs: [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
