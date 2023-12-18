@@ -25,3 +25,5 @@ This file shows the association of each file with each problem
 - main22.rs: [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)
 - main23.rs: [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
 - main24.rs: [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately)
+- main25.rs [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
+- main26.rs [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
