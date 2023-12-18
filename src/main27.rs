@@ -1,11 +1,27 @@
 fn max_product_difference(nums: &Vec<i32>) -> i32 {
     // find maximum difference find the first two largest number and two smallest numbers
-    let mut new_nums = nums.clone();
-    new_nums.sort();
-    let large1: i32 = new_nums[new_nums.len() - 1];
-    let large2: i32 = new_nums[new_nums.len() - 2];
-    let small1: i32 = new_nums[1];
-    let small2: i32 = new_nums[0];
+    let mut large1: i32 = i32::MIN;
+    let mut large2: i32 = i32::MIN;
+    let mut small1: i32 = i32::MAX;
+    let mut small2: i32 = i32::MAX;
+    for num in nums {
+        if *num >= large2 {
+            if *num >= large1 {
+                large2 = large1;
+                large1 = *num;
+            } else {
+                large2 = *num;
+            }
+        }
+        if *num <= small2 {
+            if *num <= small1 {
+                small2 = small1;
+                small1 = *num;
+            } else {
+                small2 = *num;
+            }
+        }
+    }
     return large1 * large2 - small1 * small2;
 }
 
