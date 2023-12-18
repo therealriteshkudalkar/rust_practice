@@ -25,6 +25,7 @@ mod main23;
 mod main24;
 mod main25;
 mod main26;
+mod main27;
 
 
 fn main() {
@@ -55,5 +56,6 @@ fn main() {
     //main23::main23();
     //main24::main24();
     //main25::main25();
-    main26::main26();
+    //main26::main26();
+    main27::main27();
 }

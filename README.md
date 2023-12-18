@@ -27,3 +27,4 @@ This file shows the association of each file with each problem
 - main24.rs: [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately)
 - main25.rs [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
 - main26.rs [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
+- main27.rs [Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/)
