@@ -30,3 +30,4 @@ This file shows the association of each file with each problem
 - main27.rs [Maximum Product Difference Between Two Pairs](https://leetcode.com/problems/maximum-product-difference-between-two-pairs/)
 - main28.rs [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
 - main29.rs [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+- main30.rs [Remove Element](https://leetcode.com/problems/remove-element/description/)
