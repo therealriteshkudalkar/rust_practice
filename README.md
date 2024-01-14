@@ -33,3 +33,4 @@ This file shows the association of each file with each problem
 - main30.rs [Remove Element](https://leetcode.com/problems/remove-element/)
 - main31.rs [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 - main32.rs [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
+- main33.rs [Majority Element](https://leetcode.com/problems/majority-element/)
