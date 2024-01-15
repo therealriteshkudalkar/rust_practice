@@ -32,11 +32,11 @@ fn majority_element_optimized(nums: Vec<i32>) -> i32 {
         }
         bytes[i] = ones_count > n / 2;
     }
-    let mut num = 0;
+    let mut majority_num = 0;
     for i in 0..32 {
-        num += if bytes[i] { 1 << i } else { 0 };
+        majority_num += if bytes[i] { 1 << i } else { 0 };
     }
-    return num;
+    return majority_num;
 }
 
 pub fn main33() {

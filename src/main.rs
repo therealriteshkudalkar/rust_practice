@@ -32,6 +32,7 @@ mod main30;
 mod main31;
 mod main32;
 mod main33;
+mod main34;
 
 
 fn main() {
@@ -69,5 +70,6 @@ fn main() {
     //main30::main30();
     //main31::main31();
     //main32::main32();
-    main33::main33();
+    //main33::main33();
+    main34::main34();
 }
