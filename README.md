@@ -36,3 +36,4 @@ This file shows the association of each file with each problem
 - main33.rs [Majority Element](https://leetcode.com/problems/majority-element/)
 - main34.rs [Rotate Array](https://leetcode.com/problems/rotate-array/)
 - main35.rs [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
+- main36.rs [Jump Game](https://leetcode.com/problems/jump-game/)
