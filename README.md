@@ -35,3 +35,4 @@ This file shows the association of each file with each problem
 - main32.rs [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)
 - main33.rs [Majority Element](https://leetcode.com/problems/majority-element/)
 - main34.rs [Rotate Array](https://leetcode.com/problems/rotate-array/)
+- main35.rs [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)

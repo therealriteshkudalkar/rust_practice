@@ -1,5 +1,4 @@
 use std::collections::{HashMap, HashSet};
-use std::hash::Hash;
 
 fn has_equal_frequency(char_map: &HashMap<char, i8>) -> bool {
     let mut freq_map: HashSet<i8> = HashSet::new();
