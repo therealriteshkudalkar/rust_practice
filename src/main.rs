@@ -38,6 +38,14 @@ mod main36;
 mod main37;
 mod main38;
 mod main39;
+mod main40;
+mod main41;
+mod main42;
+mod main43;
+mod main44;
+mod main45;
+mod main46;
+mod main47;
 
 
 fn main() {
@@ -81,5 +89,13 @@ fn main() {
     //main36::main36();
     //main37::main37();
     //main38::main38();
-    main39::main39();
+    //main39::main39();
+    main40::main40();
+    //main41::main41();
+    //main42::main42();
+    //main43::main43();
+    //main44::main44();
+    //main45::main45();
+    //main46::main46();
+    //main47::main47();
 }

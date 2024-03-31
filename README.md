@@ -40,3 +40,4 @@ This file shows the association of each file with each problem
 - main37.rs [Jump Game II](https://leetcode.com/problems/jump-game-ii/)
 - main38.rs [H-Index](https://leetcode.com/problems/h-index/)
 - main39.rs [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+- main40.rs [Gas Station](https://leetcode.com/problems/gas-station/)
