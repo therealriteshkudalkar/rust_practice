@@ -43,3 +43,4 @@ This file shows the association of each file with each problem
 - main40.rs [Gas Station](https://leetcode.com/problems/gas-station/)
 - main41.rs [3Sum](https://leetcode.com/problems/3sum)
 - main42.rs [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)
+- main43.rs [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/)
