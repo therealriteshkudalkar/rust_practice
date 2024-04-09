@@ -46,6 +46,9 @@ mod main44;
 mod main45;
 mod main46;
 mod main47;
+mod main48;
+mod main49;
+mod main50;
 
 
 fn main() {
@@ -91,11 +94,14 @@ fn main() {
     //main38::main38();
     //main39::main39();
     //main40::main40();
-    main41::main41();
+    //main41::main41();
     //main42::main42();
     //main43::main43();
-    //main44::main44();
+    main44::main44();
     //main45::main45();
     //main46::main46();
     //main47::main47();
+    //main48::main48();
+    //main49::main49();
+    //main50::main50();
 }
