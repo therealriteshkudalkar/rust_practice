@@ -1,8 +1,6 @@
 use std::collections::{HashMap, HashSet};
 
 fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
-    let mut judge = -1;
-
     // Form the hashmap
     let mut node_map: HashMap<i32, HashSet<i32>> = HashMap::new();
 
@@ -21,8 +19,7 @@ fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
     }
 
     // Perform topological sort
-    let mut judge_found = false;
-    while !judge_found {
+    loop {
         let mut nodes_with_out_degree_zero: HashSet<i32> = HashSet::new();
         // Find the nodes with in-degree zero
         for (node, adj_list) in &node_map {
@@ -31,7 +28,6 @@ fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
             }
         }
         return if nodes_with_out_degree_zero.len() == 1 {
-            judge_found = true;
             let judge = *nodes_with_out_degree_zero.iter().next().unwrap();
             // Check if this is present in all the other hashsets
             let mut is_trust_worthy = true;
@@ -51,8 +47,6 @@ fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
             -1
         }
     }
-
-    return judge;
 }
 
 pub fn main44() {

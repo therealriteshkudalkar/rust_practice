@@ -1,5 +1,4 @@
 use std::collections::{HashMap, HashSet};
-use std::hash::Hash;
 
 fn three_sum_naive(nums: Vec<i32>) -> Vec<Vec<i32>>{
     let mut set: HashSet<Vec<i32>> = HashSet::new();

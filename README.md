@@ -1,6 +1,7 @@
 # Rust Practice
 
-This file shows the association of each file with each problem
+The association of each file with each problem is listed below:
+
 - main1.rs: [Two Sum Problem](https://leetcode.com/problems/two-sum/)
 - main2.rs: [Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 - main3.rs: [Valid Parenthesis](https://leetcode.com/problems/valid-parentheses/)
@@ -56,3 +57,11 @@ This file shows the association of each file with each problem
 - main54.rs [Text Justification](https://leetcode.com/problems/text-justification/)
 - main55.rs [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/)
 - main56.rs [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+- main57.rs [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+- main58.rs [Candy](https://leetcode.com/problems/candy/)
+- main59.rs [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+- main60.rs [Naming A Company](https://leetcode.com/problems/naming-a-company/)
+- main61.rs [Maximum Score of a Node Sequence](https://leetcode.com/problems/maximum-score-of-a-node-sequence/)
+- main62.rs [Pow(x, n)](https://leetcode.com/problems/powx-n/)
+- main63.rs [Permutations](https://leetcode.com/problems/permutations/)
+- main64.rs [Permutations II](https://leetcode.com/problems/permutations-ii/)

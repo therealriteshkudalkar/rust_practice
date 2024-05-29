@@ -3,7 +3,7 @@ use std::collections::HashMap;
 // This takes O(N) space and O(N) time
 fn majority_element(nums: Vec<i32>) -> i32 {
     let mut map: HashMap<i32, i32> = HashMap::new();
-    let mut maj_el = nums[0];
+    let maj_el = nums[0];
     let ceil = nums.len() as i32 / 2i32 + 1;
     for num in nums {
         if map.contains_key(&num) {

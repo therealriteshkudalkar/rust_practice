@@ -12,9 +12,8 @@ fn eventual_safe_nodes(graph: Vec<Vec<i32>>) -> Vec<i32> {
     }
 
     // Topological sorting
-    let mut has_in_degree_zero_nodes = true;
     let mut safe_nodes = HashSet::new();
-    while has_in_degree_zero_nodes {
+    loop {
         // Identify nodes with in-degree zero
         let mut in_degree_zero_nodes = HashSet::new();
         for (node, adj_list) in &node_map {
@@ -23,7 +22,6 @@ fn eventual_safe_nodes(graph: Vec<Vec<i32>>) -> Vec<i32> {
             }
         }
         if in_degree_zero_nodes.len() == 0 {
-            has_in_degree_zero_nodes = false;
             break;
         }
 
@@ -33,7 +31,7 @@ fn eventual_safe_nodes(graph: Vec<Vec<i32>>) -> Vec<i32> {
             safe_nodes.insert(*node);
         }
         // Remove in-degree zero nodes from the adjacency list of other nodes
-        let mut node_keys= Vec::new();
+        let mut node_keys = Vec::new();
         for node in node_map.keys() {
             node_keys.push(*node);
         }

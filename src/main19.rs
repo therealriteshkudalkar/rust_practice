@@ -81,7 +81,6 @@ fn collect_valid_parenthesis_dp(map: &mut HashMap<usize, Vec<char>>, hs: &mut Ha
 }
 
 pub fn generate_parenthesis(n: i32) -> Vec<String> {
-    let par_str = String::new();
     // make this by adding brackets
     let mut par_vec: Vec<char> = Vec::new();
     for i in 0..2 * n {

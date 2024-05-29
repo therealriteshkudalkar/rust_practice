@@ -1,5 +1,3 @@
-use std::collections::HashSet;
-
 // Takes O(n^2) time
 fn can_complete_circuit_naive(gas: Vec<i32>, cost: Vec<i32>) -> i32 {
     let n = gas.len();

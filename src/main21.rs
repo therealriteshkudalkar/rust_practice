@@ -13,7 +13,7 @@ fn count_chars(s: &String) -> HashMap<char, u32> {
 }
 
 fn is_anagram(s: String, t: String) -> bool {
-    let mut hm_s: HashMap<char, u32> = count_chars(&s);
+    let hm_s: HashMap<char, u32> = count_chars(&s);
     let hm_t: HashMap<char, u32> = count_chars(&t);
     // check if both maps have same keys and values
     return hm_s.eq(&hm_t);

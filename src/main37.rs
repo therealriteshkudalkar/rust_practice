@@ -1,7 +1,6 @@
 
 fn jump(nums: Vec<i32>) -> i32 {
     let n = nums.len();
-    let count = 0;
     let mut reachablility = vec![false; n];
     let mut least_step = vec![i32::MAX; n];
     least_step[n - 1] = 0;

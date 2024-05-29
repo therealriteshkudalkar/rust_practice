@@ -17,7 +17,7 @@ fn is_a_factor(str1: &str, str2: &str) -> bool {
     }
     let times = str1.len() / str2.len();
     let mut str1_iter = str1.chars();
-    for i in 0..times {
+    for _ in 0..times {
         for ch_str2 in str2.chars() {
             let ch_str1 = str1_iter.next().unwrap();
             if ch_str2 != ch_str1 {
@@ -30,8 +30,8 @@ fn is_a_factor(str1: &str, str2: &str) -> bool {
 
 fn gcd_of_strings(str1: String, str2: String) -> String {
     // find the factors of str1 & str2
-    let mut str1_factors: Vec<&str> = find_factors_of_self(&str1);
-    let mut str2_factors: Vec<&str> = find_factors_of_self(&str2);
+    let str1_factors: Vec<&str> = find_factors_of_self(&str1);
+    let str2_factors: Vec<&str> = find_factors_of_self(&str2);
 
     for i in (0..str1_factors.len()).rev() {
         for j in (0..str2_factors.len()).rev() {
