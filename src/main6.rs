@@ -1,4 +1,5 @@
 
+#[allow(dead_code)]
 fn can_be_increasing_fast(nums: &Vec<i32>) -> bool {
     let mut count_of_rule_breakers = 0;
     for i in 0..nums.len()-1 {

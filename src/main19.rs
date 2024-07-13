@@ -22,6 +22,7 @@ fn is_valid_parenthesis(s: &Vec<char>) -> bool {
     return stack.is_empty();
 }
 
+#[allow(dead_code)]
 fn collect_valid_parenthesis(hs: &mut HashSet<String>, index_hs: &mut HashSet<usize>, par_str: &Vec<char>,
                              curr_str: &mut Vec<char>, pos: usize) {
     if pos == par_str.len() {

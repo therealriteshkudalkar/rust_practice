@@ -23,6 +23,7 @@ fn delete_and_earn_process(nums: Vec<i32>) -> i32 {
     return delete_and_earn_with_memoized(&mut HashMap::new(), &num_count, &keys, &mut HashSet::new(),0);
 }
 
+#[allow(dead_code)]
 fn delete_and_earn_with_rec(
     nums: &HashMap<i32, i32>,
     order: &Vec<i32>,
@@ -79,6 +80,7 @@ fn delete_and_earn_with_memoized(
     return max_val;
 }
 
+#[allow(dead_code)]
 fn delete_and_earn_memoized(
     nums: &Vec<i32>,
     memo: &mut HashMap<String, i32>,
@@ -110,6 +112,7 @@ fn delete_and_earn_memoized(
     return max_value;
 }
 
+#[allow(dead_code)]
 fn delete_and_earn_rec(nums: &Vec<i32>, curr_index: usize, hs: &mut HashSet<i32>) -> i32 {
     if curr_index >= nums.len() {
         return 0;

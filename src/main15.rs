@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn max_profit_naive(prices: &Vec<i32>) -> i32 {
     let mut max = 0;
     for i in 0..prices.len() {

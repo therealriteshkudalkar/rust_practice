@@ -66,7 +66,6 @@ mod main63;
 mod main64;
 
 fn main() {
-    // take user input
     println!("Enter a number to run the file:");
     let mut input_line = String::new();
     match stdin().read_line(&mut input_line) {

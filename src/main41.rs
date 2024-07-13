@@ -1,5 +1,6 @@
 use std::collections::{HashMap, HashSet};
 
+#[allow(dead_code)]
 fn three_sum_naive(nums: Vec<i32>) -> Vec<Vec<i32>>{
     let mut set: HashSet<Vec<i32>> = HashSet::new();
     for (i, &num) in nums.iter().enumerate() {
@@ -25,6 +26,7 @@ fn three_sum_naive(nums: Vec<i32>) -> Vec<Vec<i32>>{
 
 }
 
+#[allow(dead_code)]
 fn two_sum_fast(nums: &Vec<i32>, target: i32) -> Vec<usize> {
     // Find two numbers from num, where num[i]+num[j]=value
     let mut map: HashMap<i32, usize> = HashMap::new();
@@ -39,6 +41,7 @@ fn two_sum_fast(nums: &Vec<i32>, target: i32) -> Vec<usize> {
     return vec![]
 }
 
+#[allow(dead_code)]
 fn three_sum_faster(nums: Vec<i32>) -> Vec<Vec<i32>> {
     // Intuition: Extend the two sum solution for the three sum problem
     let mut set: HashSet<Vec<i32>> = HashSet::new();

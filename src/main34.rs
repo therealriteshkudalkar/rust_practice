@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn rotate(nums: &mut Vec<i32>, k: i32) {
     let len = nums.len();
     for _ in 0..k {
@@ -19,6 +20,7 @@ fn rotate2(nums: &mut Vec<i32>, k: i32) {
     }
 }
 
+#[allow(dead_code)]
 fn rotate3(nums: &mut Vec<i32>, k: i32) {
     if k > 0 {
         let len = nums.len();

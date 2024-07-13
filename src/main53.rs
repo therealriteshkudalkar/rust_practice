@@ -14,6 +14,7 @@ fn find_duplicate_naive(nums: Vec<i32>) -> i32 {
     return duplicate_number;
 }
 
+#[allow(dead_code)]
 fn find_duplicate_smarter(nums: Vec<i32>) -> i32 {
     let mut cloned_nums: Vec<i32> = nums.clone();
     cloned_nums.sort();

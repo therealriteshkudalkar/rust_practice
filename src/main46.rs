@@ -27,6 +27,7 @@ fn rob_houses_memoized(
     return max_sum;
 }
 
+#[allow(dead_code)]
 fn rob_houses(nums: &Vec<i32>, curr_house: usize, prev_selected: bool) -> i32 {
     if curr_house >= nums.len() {
         return 0;
