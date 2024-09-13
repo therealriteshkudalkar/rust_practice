@@ -69,11 +69,8 @@ mod main65;
 fn main() {
     println!("Enter a number to run the file:");
     let mut input_line = String::new();
-    match stdin().read_line(&mut input_line) {
-        Err(err) => {
-            println!("Error occurred while reading line. {err}")
-        }
-        Ok(_) => {}
+    if let Err(err) = stdin().read_line(&mut input_line) {
+        println!("Error occurred while reading line. {err}")
     }
     match input_line.trim().parse() {
         Err(err) => {

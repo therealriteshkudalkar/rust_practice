@@ -1,6 +1,6 @@
 pub fn is_vowel(ch: char) -> bool {
-    return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' ||
-        ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U';
+    ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' ||
+        ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U'
 }
 
 pub fn reverse_vowels(s: &String) -> String {
@@ -18,7 +18,7 @@ pub fn reverse_vowels(s: &String) -> String {
             rev_str.push(ch);
         }
     }
-    return rev_str;
+    rev_str
 }
 
 pub fn main20() {

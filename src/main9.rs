@@ -10,13 +10,14 @@ fn generate(num_rows: i32) -> Vec<Vec<i32>> {
         // length of this vector is (i+1)
         let mut pas_ith = vec![1; (i + 1) as usize];
         for j in 1..=((i + 1) / 2) {
-            let computed_val =  pas_tri[(i - 1) as usize][(j - 1) as usize] + pas_tri[(i - 1) as usize][j as usize];
+            let computed_val =  pas_tri[(i - 1) as usize][(j - 1) as usize] + 
+                pas_tri[(i - 1) as usize][j as usize];
             pas_ith[j as usize] = computed_val;
             pas_ith[(i  - j) as usize] = computed_val;
         }
         pas_tri[i as usize] = pas_ith;
     }
-    return pas_tri;
+    pas_tri
 }
 
 pub fn main9() {

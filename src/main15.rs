@@ -9,7 +9,7 @@ fn max_profit_naive(prices: &Vec<i32>) -> i32 {
             }
         }
     }
-    return max;
+    max
 }
 
 fn max_profit(prices: &Vec<i32>) -> i32 {
@@ -26,7 +26,7 @@ fn max_profit(prices: &Vec<i32>) -> i32 {
             max_prof = curr_profit;
         }
     }
-    return max_prof;
+    max_prof
 }
 
 pub fn main15() {

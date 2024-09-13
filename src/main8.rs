@@ -10,7 +10,7 @@ fn count_bits(n: i32) -> Vec<i32> {
     for i in 2..n + 1 {
         ar[i as usize] = i % 2 + ar[(i / 2) as usize];
     }
-    return ar;
+    ar
 }
 
 pub fn main8() {

@@ -8,7 +8,7 @@ fn climb_stairs(n: i32) -> i32 {
     for i in 2..n + 1 {
         ar[i as usize] = ar[(i - 1) as usize] + ar[(i - 2) as usize];
     }
-    return ar[n as usize];
+    ar[n as usize]
 }
 
 pub fn main7() {

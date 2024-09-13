@@ -20,7 +20,7 @@ fn get_maximum_generated(n: i32) -> i32 {
             max = gen_val;
         }
     }
-    return max;
+    max
 }
 
 pub fn main16() {

@@ -18,7 +18,7 @@ fn can_be_increasing_fast(nums: &Vec<i32>) -> bool {
         }
     }
     println!("{count_of_rule_breakers}");
-    return count_of_rule_breakers <= 1;
+    count_of_rule_breakers <= 1
 }
 
 fn is_increasing(nums: &Vec<i32>, skip: usize) -> bool {
@@ -29,13 +29,11 @@ fn is_increasing(nums: &Vec<i32>, skip: usize) -> bool {
             if i + 2 < nums.len() && nums[i] >= nums[i + 2] {
                 return false;
             }
-        } else {
-            if nums[i] >= nums[i + 1] {
-                return false;
-            }
+        } else if nums[i] >= nums[i + 1] {
+            return false;
         }
     }
-    return true;
+    true
 }
 
 fn can_be_increasing(nums: &Vec<i32>) -> bool {
@@ -44,7 +42,7 @@ fn can_be_increasing(nums: &Vec<i32>) -> bool {
             return true;
         }
     }
-    return false;
+    false
 }
 
 pub fn main6() {

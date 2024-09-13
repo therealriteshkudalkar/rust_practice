@@ -19,7 +19,7 @@ fn is_valid_parenthesis(s: &Vec<char>) -> bool {
             }
         }
     }
-    return stack.is_empty();
+    stack.is_empty()
 }
 
 #[allow(dead_code)]
@@ -109,7 +109,7 @@ pub fn generate_parenthesis(n: i32) -> Vec<String> {
         &mut cur_vec_str,
         0);
     println!("map: {:?}", map);
-    return valid_par_set.into_iter().collect();
+    valid_par_set.into_iter().collect()
 }
 
 pub fn main19() {

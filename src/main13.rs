@@ -1,9 +1,7 @@
 
 fn tribonacci(n: i32) -> i32 {
-    if n == 0 {
-        return 0;
-    } else if n == 1 {
-        return 1;
+    if n == 0 || n == 1 {
+        return n;
     } else if n == 2 {
         return 1;
     }
@@ -19,7 +17,7 @@ fn tribonacci(n: i32) -> i32 {
         d = a + b + c;
         count += 1;
     }
-    return d;
+    d
 }
 
 pub fn main13() {

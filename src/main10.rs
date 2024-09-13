@@ -15,7 +15,7 @@ fn fib(n: i32) -> i32 {
         c = a + b;
         count += 1;
     }
-    return c;
+    c
 }
 
 pub fn main10() {

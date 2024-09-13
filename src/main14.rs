@@ -13,7 +13,7 @@ fn get_row(row_index: i32) -> Vec<i32> {
         }
         ith_vec = curr_vec;
     }
-    return ith_vec;
+    ith_vec
 }
 
 pub fn main14() {

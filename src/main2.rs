@@ -7,7 +7,7 @@ fn is_palindrome(x: i32) -> bool {
         y = y * 10 + rem;
         temp /= 10;
     }
-    return y == x;
+    y == x
 }
 
 pub fn main2() {

@@ -30,7 +30,7 @@ fn divisor_game(n: i32) -> bool {
         store[i as usize] = res;
     }
     //println!("store: {:?}", store);
-    return store[n as usize];
+    store[n as usize]
 }
 
 pub fn main11() {

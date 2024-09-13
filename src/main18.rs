@@ -13,7 +13,7 @@ fn count_vowel_strings_for_character(map: &mut HashMap<String, i32>, vow_ar: &Ve
         count += count_vowel_strings_for_character(map, vow_ar, i, n - 1);
     }
     map.insert(v , count);
-    return count;
+    count
 }
 
 fn count_vowel_strings(n: i32) -> i32 {
@@ -21,7 +21,7 @@ fn count_vowel_strings(n: i32) -> i32 {
     // aaa, aae, aai, aao, aau, aee, aei, aeo, aeu, eee, eei, eeu, eeo, eii, eio, eiu,
     let mut map: HashMap<String, i32> = HashMap::new();
     let vow_ar = vec!['a', 'e', 'i', 'o', 'u'];
-    return count_vowel_strings_for_character(&mut map, &vow_ar, 0, n);
+    count_vowel_strings_for_character(&mut map, &vow_ar, 0, n)
 }
 
 pub fn main18() {

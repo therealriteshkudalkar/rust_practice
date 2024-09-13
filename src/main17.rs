@@ -1,6 +1,6 @@
 
 fn is_subsequence(s: &String, t: &String) -> bool {
-    if s.len() == 0 {
+    if s.is_empty() {
         return true;
     }
     let byte_s = s.as_bytes();
@@ -15,7 +15,7 @@ fn is_subsequence(s: &String, t: &String) -> bool {
             }
         }
     }
-    return false;
+    false
 }
 
 pub fn main17() {
