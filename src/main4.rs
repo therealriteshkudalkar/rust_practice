@@ -5,7 +5,7 @@ fn has_equal_frequency(char_map: &HashMap<char, i8>) -> bool {
     for (_key, value) in char_map.iter() {
         freq_map.insert(*value);
     }
-    return freq_map.len() == 1;
+    freq_map.len() == 1
 }
 
 fn equal_frequency(word: String) -> bool {
@@ -36,7 +36,7 @@ fn equal_frequency(word: String) -> bool {
         // alter the map again
         char_map.insert(ch, curr_char_count);
     }
-    return false;
+    false
 }
 
 pub fn main4() {

@@ -75,7 +75,7 @@ fn three_sum_faster(nums: Vec<i32>) -> Vec<Vec<i32>> {
 }
 
 fn three_sum(nums: Vec<i32>) -> Vec<Vec<i32>> {
-    let mut sorted_nums: Vec<i32> = nums.clone();
+    let mut sorted_nums: Vec<i32> = nums;
     sorted_nums.sort();
     let nums_len = sorted_nums.len();
     let mut solution_set: HashSet<Vec<i32>> = HashSet::new();

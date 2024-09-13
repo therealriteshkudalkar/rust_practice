@@ -64,6 +64,7 @@ mod main61;
 mod main62;
 mod main63;
 mod main64;
+mod main65;
 
 fn main() {
     println!("Enter a number to run the file:");
@@ -144,6 +145,7 @@ fn main() {
                 62 => { main62::main62() }
                 63 => { main63::main63() }
                 64 => { main64::main64() }
+                65 => { main65::main65()}
                 _ => {
                     println!("Error, no such file.")
                 }

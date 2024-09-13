@@ -1,13 +1,13 @@
 fn is_opening_brace(c: char) -> bool {
-    return c == '(' || c == '{' || c == '[';
+    c == '(' || c == '{' || c == '['
 }
 
 fn is_closing_brace(c: char) -> bool {
-    return c == ')' || c == '}' || c == ']';
+    c == ')' || c == '}' || c == ']'
 }
 
 fn are_matching_brace(c1: char, c2: char) -> bool {
-    return c1 == '(' && c2 == ')' || c1 == '[' && c2 == ']' || c1 == '{' && c2 == '}';
+    c1 == '(' && c2 == ')' || c1 == '[' && c2 == ']' || c1 == '{' && c2 == '}'
 }
 
 fn is_valid(s: String) -> bool {
@@ -34,11 +34,11 @@ fn is_valid(s: String) -> bool {
             }
         }
     }
-    return stack.is_empty();
+    stack.is_empty()
 }
 
-pub fn main3 () {
-    let s= String::from("()");
+pub fn main3() {
+    let s = String::from("()");
     println!("s: {s}, is_valid: {}", is_valid(s.clone()));
     let s = String::from("(()");
     println!("s: {s}, is_valid: {}", is_valid(s.clone()));

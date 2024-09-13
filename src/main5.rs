@@ -1,4 +1,3 @@
-
 fn find_index(vector: &Vec<i32>, money: i32) -> usize {
     //let index: usize = 0;
     // find the first index which I can make 8 with given money
@@ -28,26 +27,26 @@ fn dist_money(money: i32, children: i32) -> i32 {
     }
 
     let mut children_vec = vec![1; children as usize];
-    for i in 0..children_vec.len() {
+    for element in &mut children_vec {
         // check if 7 can be given or not
         if temp - 7 >= 0 {
-            children_vec[i] += 7;
+            *element += 7;
             temp -= 7;
         } else {
             // give the money and check if it equates to 4 before giving it away
-            if children_vec[i] + temp == 4 {
+            if *element + temp == 4 {
                 // under this temp and children_vec[i] are both less than 4
                 if temp == 1 {
                     continue;
                 } else if temp == 2 {
                     temp -= 1;
-                    children_vec[i] += 1;
+                    *element += 1;
                 } else {
                     temp -= 2;
-                    children_vec[i] += 2;
+                    *element += 2;
                 }
             } else {
-                children_vec[i] += temp;
+                *element += temp;
                 temp = 0;
             }
         }
@@ -61,30 +60,48 @@ fn dist_money(money: i32, children: i32) -> i32 {
 
     // check how many 8s are present in the array
     let mut count = 0;
-    for item in children_vec.iter() {
+    for item in &children_vec {
         if *item == 8 {
             count += 1;
         }
     }
-    return count;
+    count
 }
 
 pub fn main5() {
     let (money, children) = (20, 3);
-    println!("money: {money}, children: {children}, dist_money: {}", dist_money(money, children));
+    println!(
+        "money: {money}, children: {children}, dist_money: {}",
+        dist_money(money, children)
+    );
 
     let (money, children) = (24, 3);
-    println!("money: {money}, children: {children}, dist_money: {}", dist_money(money, children));
+    println!(
+        "money: {money}, children: {children}, dist_money: {}",
+        dist_money(money, children)
+    );
 
     let (money, children) = (16, 2);
-    println!("money: {money}, children: {children}, dist_money: {}", dist_money(money, children));
+    println!(
+        "money: {money}, children: {children}, dist_money: {}",
+        dist_money(money, children)
+    );
 
     let (money, children) = (255, 3);
-    println!("money: {money}, children: {children}, dist_money: {}", dist_money(money, children));
+    println!(
+        "money: {money}, children: {children}, dist_money: {}",
+        dist_money(money, children)
+    );
 
     let (money, children) = (28, 4);
-    println!("money: {money}, children: {children}, dist_money: {}", dist_money(money, children));
+    println!(
+        "money: {money}, children: {children}, dist_money: {}",
+        dist_money(money, children)
+    );
 
     let (money, children) = (12, 2);
-    println!("money: {money}, children: {children}, dist_money: {}", dist_money(money, children));
+    println!(
+        "money: {money}, children: {children}, dist_money: {}",
+        dist_money(money, children)
+    );
 }
