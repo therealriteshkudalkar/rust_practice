@@ -1,6 +1,6 @@
 fn four_sum(nums: Vec<i32>, target: i32) -> Vec<Vec<i32>> {
     // Loop through the nums array
-    let mut return_vec = Vec::new();
+    let return_vec = Vec::new();
 
     return_vec
 }

@@ -20,7 +20,7 @@ impl TreeNode {
 }
 
 fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
-    return match root {
+    match root {
         None => 0,
         Some(root_node) => {
             let left_depth = match &root_node.borrow().left {
@@ -33,7 +33,7 @@ fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
             };
             1 + max(left_depth, right_depth)
         }
-    };
+    }
 }
 
 pub fn main56() {
@@ -44,7 +44,11 @@ pub fn main56() {
             Some(TreeNode::new(4, None, None)),
             Some(TreeNode::new(5, None, Some(TreeNode::new(6, None, None)))),
         )),
-        Some(TreeNode::new(3, Some(TreeNode::new(7, None, None)), None)),
+        Some(TreeNode::new(
+            3, 
+            Some(TreeNode::new(7, None, None)), 
+            None)
+        ),
     );
 
     println!("max_depth: {}", max_depth(Some(tree_root)));

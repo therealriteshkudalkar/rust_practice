@@ -19,6 +19,7 @@ fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
     }
 
     // Perform topological sort
+    
     loop {
         let mut nodes_with_out_degree_zero: HashSet<i32> = HashSet::new();
         // Find the nodes with in-degree zero

@@ -22,7 +22,7 @@ fn three_sum_naive(nums: Vec<i32>) -> Vec<Vec<i32>>{
             map.insert(num1, j);
         }
     }
-    return set.into_iter().collect();
+    set.into_iter().collect()
 
 }
 
@@ -38,7 +38,7 @@ fn two_sum_fast(nums: &Vec<i32>, target: i32) -> Vec<usize> {
         }
         map.insert(*num, index);
     }
-    return vec![]
+    vec![]
 }
 
 #[allow(dead_code)]
@@ -71,7 +71,7 @@ fn three_sum_faster(nums: Vec<i32>) -> Vec<Vec<i32>> {
         resultant_vec.sort();
         set.insert(resultant_vec);
     }
-    return Vec::from_iter(set);
+    set.into_iter().collect()
 }
 
 fn three_sum(nums: Vec<i32>) -> Vec<Vec<i32>> {
@@ -105,7 +105,7 @@ fn three_sum(nums: Vec<i32>) -> Vec<Vec<i32>> {
             }
         }
     }
-    return Vec::from_iter(solution_set);
+    solution_set.into_iter().collect()
 }
 
 pub fn main41() {

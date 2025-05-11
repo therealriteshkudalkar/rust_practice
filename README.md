@@ -65,3 +65,13 @@ The association of each file with each problem is listed below:
 - main62.rs: [Pow(x, n)](https://leetcode.com/problems/powx-n/)
 - main63.rs: [Permutations](https://leetcode.com/problems/permutations/)
 - main64.rs: [Permutations II](https://leetcode.com/problems/permutations-ii/)
+- main65.rs: [Four Sum](https://leetcode.com/problems/4sum/)
+- main65.rs: [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+- main66.rs: []()
+- main67.rs: []()
+- main68.rs: []()
+- main69.rs: []()
+- main70.rs: [Relative Ranks](https://leetcode.com/problems/relative-ranks/)
+- main71.rs: [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)
+- main72.rs: [Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/)
+- 
