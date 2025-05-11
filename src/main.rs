@@ -77,11 +77,11 @@ fn main() {
     println!("Enter a number to run the file:");
     let mut input_line = String::new();
     if let Err(err) = stdin().read_line(&mut input_line) {
-        println!("Error occurred while reading line. {err}")
+        panic!("Error occurred while reading line. {err}")
     }
     match input_line.trim().parse() {
         Err(err) => {
-            println!("Error while parsing the input. {err}")
+            panic!("Error while parsing the input. {err}")
         }
         Ok(num) => {
             match num {
