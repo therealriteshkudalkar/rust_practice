@@ -19,47 +19,55 @@ fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
     }
 
     // Perform topological sort
-    
-    loop {
-        let mut nodes_with_out_degree_zero: HashSet<i32> = HashSet::new();
-        // Find the nodes with in-degree zero
+
+    let mut nodes_with_out_degree_zero: HashSet<i32> = HashSet::new();
+    // Find the nodes with in-degree zero
+    for (node, adj_list) in &node_map {
+        if adj_list.is_empty() {
+            nodes_with_out_degree_zero.insert(*node);
+        }
+    }
+    if nodes_with_out_degree_zero.len() == 1 {
+        let judge = *nodes_with_out_degree_zero.iter().next().unwrap();
+        // Check if this is present in all the other hashsets
+        let mut is_trust_worthy = true;
         for (node, adj_list) in &node_map {
-            if adj_list.len() == 0 {
-                nodes_with_out_degree_zero.insert(*node);
+            if *node != judge && !adj_list.contains(&judge) {
+                is_trust_worthy = false;
             }
         }
-        return if nodes_with_out_degree_zero.len() == 1 {
-            let judge = *nodes_with_out_degree_zero.iter().next().unwrap();
-            // Check if this is present in all the other hashsets
-            let mut is_trust_worthy = true;
-            for (node, adj_list) in &node_map {
-                if *node != judge {
-                    if !adj_list.contains(&judge) {
-                        is_trust_worthy = false;
-                    }
-                }
-            }
-            return if is_trust_worthy {
-                judge
-            } else {
-                -1
-            }
+        if is_trust_worthy {
+            judge
         } else {
             -1
         }
+    } else {
+        -1
     }
 }
 
 pub fn main44() {
     let n = 2;
     let trust = vec![vec![1, 2]];
-    println!("n: {n}; trust: {:?}; judge: {}", trust, find_judge(n, trust.clone()));
+    println!(
+        "n: {n}; trust: {:?}; judge: {}",
+        trust,
+        find_judge(n, trust.clone())
+    );
 
     let n = 3;
     let trust = vec![vec![1, 3], vec![2, 3]];
-    println!("n: {n}; trust: {:?}; judge: {}", trust, find_judge(n, trust.clone()));
+    println!(
+        "n: {n}; trust: {:?}; judge: {}",
+        trust,
+        find_judge(n, trust.clone())
+    );
 
     let n = 2;
     let trust = vec![vec![1, 3], vec![2, 3], vec![3, 1]];
-    println!("n: {n}; trust: {:?}; judge: {}", trust, find_judge(n, trust.clone()))
+    println!(
+        "n: {n}; trust: {:?}; judge: {}",
+        trust,
+        find_judge(n, trust.clone())
+    )
 }

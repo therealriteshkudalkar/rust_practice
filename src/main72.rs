@@ -7,7 +7,7 @@ struct Pair(i32, usize);
 fn max_subsequence(nums: Vec<i32>, k: i32) -> Vec<i32> {
     let mut min_heap = BinaryHeap::new();
     for (index, num) in nums.iter().enumerate() {
-        // Push if it is less than k and if not then check if main
+        // Push if it is less than k and if not, then check if main
         if min_heap.len() < k as usize {
             min_heap.push(Reverse(Pair(*num, index)));
         } else {
