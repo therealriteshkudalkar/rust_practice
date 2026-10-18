@@ -17,8 +17,3 @@ fn fib(n: i32) -> i32 {
     }
     c
 }
-
-pub fn main10() {
-    let n = 45;
-    println!("n: {n}; fib: {}", fib(n));
-}

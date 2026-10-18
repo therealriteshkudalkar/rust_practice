@@ -35,21 +35,3 @@ fn max_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         }
     }
 }
-
-pub fn main56() {
-    let tree_root = TreeNode::new(
-        1,
-        Some(TreeNode::new(
-            2,
-            Some(TreeNode::new(4, None, None)),
-            Some(TreeNode::new(5, None, Some(TreeNode::new(6, None, None)))),
-        )),
-        Some(TreeNode::new(
-            3, 
-            Some(TreeNode::new(7, None, None)), 
-            None)
-        ),
-    );
-
-    println!("max_depth: {}", max_depth(Some(tree_root)));
-}

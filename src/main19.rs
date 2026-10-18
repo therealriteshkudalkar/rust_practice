@@ -111,31 +111,3 @@ pub fn generate_parenthesis(n: i32) -> Vec<String> {
     println!("map: {:?}", map);
     valid_par_set.into_iter().collect()
 }
-
-pub fn main19() {
-    let test = vec!['(', '(', ')', ')'];
-    println!("test: {:?}, is_valid_parenthesis: {}", test, is_valid_parenthesis(&test));
-    let test = vec!['(', ')', '(', ')'];
-    println!("test: {:?}, is_valid_parenthesis: {}", test, is_valid_parenthesis(&test));
-    let test = vec!['(', '(', ')', '(', ')', ')'];
-    println!("test: {:?}, is_valid_parenthesis: {}", test, is_valid_parenthesis(&test));
-    let test = vec!['(', '(', '(', ')', ')', '(', ')', ')'];
-    println!("test: {:?}, is_valid_parenthesis: {}", test, is_valid_parenthesis(&test));
-    let test = vec!['(', ')', '(', ')'];
-    println!("test: {:?}, is_valid_parenthesis: {}", test, is_valid_parenthesis(&test));
-
-    let n = 2;
-    println!("n: {n}, generate_parenthesis: {:?}", generate_parenthesis(n));
-    let n = 3;
-    println!("n: {n}, generate_parenthesis: {:?}", generate_parenthesis(n));
-    // let n = 4;
-    // println!("n: {n}, generate_parenthesis: {:?}", generate_parenthesis(n));
-    // let n = 5;
-    // println!("n: {n}, generate_parenthesis: {:?}", generate_parenthesis(n));
-    // let n = 6;
-    // println!("n: {n}, generate_parenthesis: {:?}", generate_parenthesis(n));
-    // let n = 7;
-    // println!("n: {n}, generate_parenthesis: {:?}", generate_parenthesis(n));
-    // let n = 8;
-    // println!("n: {n}, generate_parenthesis: {:?}", generate_parenthesis(n));
-}

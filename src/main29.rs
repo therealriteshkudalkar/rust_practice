@@ -27,23 +27,3 @@ fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
         nums1[index] = *num;
     }
 }
-
-pub fn main29() {
-    let mut vec1 = vec![1, 2, 3, 0, 0, 0];
-    let mut vec2 = vec![2, 5, 6];
-    print!("vec1: {:?}; vec2: {:?}; ", vec1, vec2);
-    merge(&mut vec1, 3, &mut vec2, 3);
-    println!("merged: {:?}", vec1);
-
-    let mut vec1 = vec![1];
-    let mut vec2 = vec![];
-    print!("vec1: {:?}; vec2: {:?}; ", vec1, vec2);
-    merge(&mut vec1, 1, &mut vec2, 0);
-    println!("merged: {:?}", vec1);
-
-    let mut vec1 = vec![0];
-    let mut vec2 = vec![1];
-    print!("vec1: {:?}; vec2: {:?}; ", vec1, vec2);
-    merge(&mut vec1, 0, &mut vec2, 1);
-    println!("merged: {:?}", vec1);
-}

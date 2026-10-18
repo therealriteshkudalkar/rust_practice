@@ -17,12 +17,3 @@ fn is_subsequence(s: &String, t: &String) -> bool {
     }
     false
 }
-
-pub fn main17() {
-    let s = String::from("abc");
-    let t = String::from("ahbgdc");
-    println!("s: {s}; t: {t}; is_subsequence: {}", is_subsequence(&s, &t));
-    let s = String::from("axc");
-    let t = String::from("ahbgdc");
-    println!("s: {s}; t: {t}; is_subsequence: {}", is_subsequence(&s, &t));
-}

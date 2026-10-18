@@ -40,12 +40,3 @@ fn merge_alternately(word1: String, word2: String) -> String {
 
     return final_string.iter().collect();
 }
-
-pub fn main24() {
-    let s1 = String::from("hello");
-    let s2 = String::from("abc");
-    println!("s1: {s1}, s2: {s2}, merge_alternatively: {}", merge_alternately(s1.clone(), s2.clone()));
-    let s1 = String::from("dude");
-    let s2 = String::from("mental");
-    println!("s1: {s1}, s2: {s2}, merge_alternatively: {}", merge_alternately(s1.clone(), s2.clone()));
-}

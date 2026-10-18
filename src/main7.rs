@@ -10,8 +10,3 @@ fn climb_stairs(n: i32) -> i32 {
     }
     ar[n as usize]
 }
-
-pub fn main7() {
-    let n = 4;
-    println!("n: {n}, climb_stairs: {}", climb_stairs(n));
-}

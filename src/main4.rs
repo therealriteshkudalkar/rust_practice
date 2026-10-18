@@ -38,22 +38,3 @@ fn equal_frequency(word: String) -> bool {
     }
     false
 }
-
-pub fn main4() {
-    let s = String::from("abcc");
-    println!("s: {s}, equal_frequency: {}", equal_frequency(s.clone()));
-    let s = String::from("aazz");
-    println!("s: {s}, equal_frequency: {}", equal_frequency(s.clone()));
-    let s = String::from("bac");
-    println!("s: {s}, equal_frequency: {}", equal_frequency(s.clone()));
-    let s = String::from("cbccca");
-    println!("s: {s}, equal_frequency: {}", equal_frequency(s.clone()));
-    let s = String::from("cac");
-    println!("s: {s}, equal_frequency: {}", equal_frequency(s.clone()));
-    let s = String::from("aca");
-    println!("s: {s}, equal_frequency: {}", equal_frequency(s.clone()));
-    let s = String::from("abbcc");
-    println!("s: {s}, equal_frequency: {}", equal_frequency(s.clone()));
-    let s = String::from("zz");
-    println!("s: {s}, equal_frequency: {}", equal_frequency(s.clone()));
-}

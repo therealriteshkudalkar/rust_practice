@@ -22,27 +22,3 @@ pub fn find_relative_ranks(score: Vec<i32>) -> Vec<String> {
     }
     result
 }
-
-pub fn main70() {
-    assert_eq!(
-        vec![
-            String::from("Gold Medal"),
-            String::from("Silver Medal"),
-            String::from("Bronze Medal"),
-            String::from("4"),
-            String::from("5")
-        ],
-        find_relative_ranks(vec![5, 4, 3, 2, 1])
-    );
-
-    assert_eq!(
-        vec![
-            String::from("Gold Medal"),
-            String::from("5"),
-            String::from("Bronze Medal"),
-            String::from("Silver Medal"),
-            String::from("4"),
-        ],
-        find_relative_ranks(vec![10, 3, 8, 9, 4])
-    );
-}

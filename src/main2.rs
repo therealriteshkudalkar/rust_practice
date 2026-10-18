@@ -9,10 +9,3 @@ fn is_palindrome(x: i32) -> bool {
     }
     y == x
 }
-
-pub fn main2() {
-    let mut x = 121;
-    println!("x: {x}, is_palindrome: {}", is_palindrome(x));
-    x = -131;
-    println!("x: {x}, is_palindrome: {}", is_palindrome(x));
-}

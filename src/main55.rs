@@ -23,20 +23,3 @@ fn max_depth(s: String) -> i32 {
 
     return depth as i32;
 }
-
-pub fn main55() {
-    let s = String::from("(1+(2*3)+((8)/4))+1");
-    println!("s: {s}; max_depth: {}", max_depth(s.clone()));
-
-    let s = String::from("(1)+((2))+(((3)))");
-    println!("s: {s}; max_depth: {}", max_depth(s.clone()));
-
-    let s = String::from("");
-    println!("s: {s}; max_depth: {}", max_depth(s.clone()));
-
-    let s = String::from("()");
-    println!("s: {s}; max_depth: {}", max_depth(s.clone()));
-
-    let s = String::from("()()");
-    println!("s: {s}; max_depth: {}", max_depth(s.clone()));
-}

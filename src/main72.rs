@@ -30,11 +30,3 @@ fn max_subsequence(nums: Vec<i32>, k: i32) -> Vec<i32> {
     max_items.sort_by(|pair_a, pair_b| pair_a.1.cmp(&pair_b.1));
     max_items.iter().map(|pair_a| pair_a.0).collect()
 }
-
-pub fn main72() {
-    assert_eq!(vec![3, 3], max_subsequence(vec![2, 1, 3, 3], 2));
-
-    assert_eq!(vec![-1, 3, 4], max_subsequence(vec![-1, -2, 3, 4], 3));
-
-    assert_eq!(vec![3, 4], max_subsequence(vec![3, 4, 3, 3], 2));
-}

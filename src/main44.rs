@@ -45,29 +45,3 @@ fn find_judge(n: i32, trust: Vec<Vec<i32>>) -> i32 {
         -1
     }
 }
-
-pub fn main44() {
-    let n = 2;
-    let trust = vec![vec![1, 2]];
-    println!(
-        "n: {n}; trust: {:?}; judge: {}",
-        trust,
-        find_judge(n, trust.clone())
-    );
-
-    let n = 3;
-    let trust = vec![vec![1, 3], vec![2, 3]];
-    println!(
-        "n: {n}; trust: {:?}; judge: {}",
-        trust,
-        find_judge(n, trust.clone())
-    );
-
-    let n = 2;
-    let trust = vec![vec![1, 3], vec![2, 3], vec![3, 1]];
-    println!(
-        "n: {n}; trust: {:?}; judge: {}",
-        trust,
-        find_judge(n, trust.clone())
-    )
-}

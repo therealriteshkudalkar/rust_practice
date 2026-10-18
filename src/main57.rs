@@ -64,11 +64,3 @@ pub fn trap(height: Vec<i32>) -> i32 {
     }
     return sum;
 }
-
-pub fn main57() {
-    let height = vec![0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
-    assert_eq!(6, trap(height));
-
-    let height = vec![4, 2, 0, 3, 2, 5];
-    assert_eq!(9, trap(height));
-}

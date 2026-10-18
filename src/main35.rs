@@ -35,17 +35,3 @@ fn max_profit(prices: Vec<i32>) -> i32 {
     }
     return profit;
 }
-
-pub fn main35() {
-    let stock_variation = vec![7,1,5,3,6,4];
-    println!("stock_variation: {:?}; max_profit: {}", stock_variation,
-             max_profit(stock_variation.clone()));
-
-    let stock_variation = vec![1,2,3,4,5];
-    println!("stock_variation: {:?}; max_profit: {}", stock_variation,
-             max_profit(stock_variation.clone()));
-
-    let stock_variation = vec![7,6,4,3,1];
-    println!("stock_variation: {:?}; max_profit: {}", stock_variation,
-             max_profit(stock_variation.clone()));
-}

@@ -28,12 +28,3 @@ fn max_profit(prices: &Vec<i32>) -> i32 {
     }
     max_prof
 }
-
-pub fn main15() {
-    let prices = vec![7, 1, 5, 3, 6, 4];
-    println!("prices: {:?}; max_profit: {}", prices, max_profit(&prices));
-    let prices = vec![7, 6, 4, 3, 1];
-    println!("prices: {:?}; max_profit: {}", prices, max_profit(&prices));
-    let prices = vec![8, 6, 9, 7, 8, 10, 3, 2, 4, 3, 12];
-    println!("prices: {:?}; max_profit: {}", prices, max_profit(&prices));
-}

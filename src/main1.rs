@@ -16,25 +16,3 @@ fn two_sum(nums: Vec<i32>, target: i32) -> Vec<usize> {
     }
     return vec![];
 }
-
-pub fn main1() {
-    // nums = [2,7,11,15], target = 9
-    let nums = vec![2, 7, 11, 15];
-    let target = 9;
-    println!(
-        "nums: {:?}, target: {:?}, two_sum: {:?}",
-        nums,
-        target,
-        two_sum(nums.clone(), target)
-    );
-
-    // nums = [3,2,4], target = 6
-    let nums = vec![3, 2, 4];
-    let target = 6;
-    println!(
-        "nums: {:?}, target: {:?}, two_sum: {:?}",
-        nums,
-        target,
-        two_sum(nums.clone(), target)
-    );
-}

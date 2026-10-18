@@ -40,34 +40,3 @@ fn maximum_score(scores: Vec<i32>, edges: Vec<Vec<i32>>) -> i32 {
     }
     return max_score;
 }
-
-pub fn main61() {
-    let scores = vec![5,2,9,8,4];
-    let edges = vec![
-        vec![0, 1],
-        vec![1, 2],
-        vec![2, 3],
-        vec![0, 2],
-        vec![1, 3],
-        vec![2, 4],
-    ];
-    assert_eq!(24, maximum_score(scores, edges));
-
-    let scores = vec![9,20,6,4,11,12];
-    let edges = vec![
-        vec![0, 3],
-        vec![5, 3],
-        vec![2, 4],
-        vec![1, 3],
-    ];
-    assert_eq!(-1, maximum_score(scores, edges));
-
-    let scores = vec![5, 4, 3, 2, 1];
-    let edges = vec![
-        vec![0, 3],
-        vec![2, 3],
-        vec![3, 4],
-        vec![1, 4],
-    ];
-    assert_eq!(12, maximum_score(scores, edges));
-}

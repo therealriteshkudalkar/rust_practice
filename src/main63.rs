@@ -17,33 +17,3 @@ fn permute(nums: Vec<i32>) -> Vec<Vec<i32>> {
     permutation_without_repetition(&nums, &mut collection, &mut Vec::new());
     return collection;
 }
-
-pub fn main63() {
-    let nums = vec![1, 2, 3];
-    assert_eq!(
-        vec![
-            vec![1, 2, 3],
-            vec![1, 3, 2],
-            vec![2, 1, 3],
-            vec![2, 3, 1],
-            vec![3, 1, 2],
-            vec![3, 2, 1]
-        ],
-        permute(nums)
-    );
-
-    let nums = vec![1, 2];
-    assert_eq!(
-        vec![
-            vec![1, 2],
-            vec![2, 1]
-        ],
-        permute(nums)
-    );
-
-    let nums = vec![1];
-    assert_eq!(
-        vec![vec![1]],
-        permute(nums)
-    );
-}

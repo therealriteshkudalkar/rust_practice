@@ -31,17 +31,3 @@ fn product_except_self(nums: Vec<i32>) -> Vec<i32> {
     }
     return result;
 }
-
-pub fn main39() {
-    let nums = vec![1, 2, 3, 4];
-    println!("nums: {:?}; result: {:?}", nums, product_except_self(nums.clone()));
-
-    let nums = vec![-1, 1, 0, -3, 3];
-    println!("nums: {:?}; result: {:?}", nums, product_except_self(nums.clone()));
-
-    let nums = vec![0, 0];
-    println!("nums: {:?}; result: {:?}", nums, product_except_self(nums.clone()));
-
-    let nums = vec![0, 4, 0];
-    println!("nums: {:?}; result: {:?}", nums, product_except_self(nums.clone()));
-}

@@ -36,11 +36,3 @@ fn rotate3(nums: &mut Vec<i32>, k: i32) {
         nums[k..].reverse();
     }
 }
-
-pub fn main34() {
-    let mut vec = vec![1, 2, 3, 4, 5, 6, 7];
-    let k = 3;
-    print!("vec: {:?}; k: {k}; ", vec);
-    rotate2(&mut vec, k);
-    println!("rotated_vec: {:?}", vec);
-}

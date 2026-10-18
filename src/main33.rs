@@ -38,17 +38,3 @@ fn majority_element_optimized(nums: Vec<i32>) -> i32 {
     }
     return majority_num;
 }
-
-pub fn main33() {
-    let vec1 = vec![3, 2, 3];
-    println!("vec: {:?}; Majority element: {}", vec1, majority_element(vec1.clone()));
-
-    let vec1 = vec![2, 2, 1, 1, 1, 2, 2];
-    println!("vec: {:?}; Majority element: {}", vec1, majority_element(vec1.clone()));
-
-    let vec1 = vec![3, 2, 3];
-    println!("vec: {:?}; Majority element: {}", vec1, majority_element_optimized(vec1.clone()));
-
-    let vec1 = vec![2, 2, 1, 1, 1, 2, 2];
-    println!("vec: {:?}; Majority element: {}", vec1, majority_element_optimized(vec1.clone()));
-}

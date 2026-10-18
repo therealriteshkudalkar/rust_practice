@@ -19,8 +19,3 @@ fn generate(num_rows: i32) -> Vec<Vec<i32>> {
     }
     pas_tri
 }
-
-pub fn main9() {
-    let row = 5;
-    println!("rows: {row}, generate: {:?}", generate(row));
-}

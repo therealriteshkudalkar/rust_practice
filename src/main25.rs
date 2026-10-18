@@ -42,17 +42,3 @@ fn gcd_of_strings(str1: String, str2: String) -> String {
     }
     return String::from("");
 }
-
-pub fn main25() {
-    let s1 = String::from("abababab");
-    let s2 = String::from("abab");
-    println!("str1: {s1}, str2: {s2}, gcd: {}", gcd_of_strings(s1.clone(), s2.clone()));
-
-    let s1 = String::from("ababab");
-    let s2 = String::from("ab");
-    println!("str1: {s1}, str2: {s2}, gcd: {}", gcd_of_strings(s1.clone(), s2.clone()));
-
-    let s1 = String::from("leet");
-    let s2 = String::from("code");
-    println!("str1: {s1}, str2: {s2}, gcd: {}", gcd_of_strings(s1.clone(), s2.clone()));
-}

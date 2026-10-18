@@ -12,8 +12,3 @@ fn count_bits(n: i32) -> Vec<i32> {
     }
     ar
 }
-
-pub fn main8() {
-    let n = 8;
-    println!("n: {n}, count_bits: {:?}", count_bits(n));
-}

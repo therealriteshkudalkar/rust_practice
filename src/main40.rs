@@ -47,37 +47,3 @@ fn can_complete_circuit(gas: Vec<i32>, cost: Vec<i32>) -> i32 {
         start as i32
     };
 }
-
-pub fn main40() {
-    let gas = vec![1, 2, 3, 4, 5];
-    let cost = vec![3, 4, 5, 1, 2];
-    println!("gas: {:?}; cost: {:?}; can_complete_circuit: {}",
-             gas, cost, can_complete_circuit_naive(gas.clone(), cost.clone()));
-
-    let gas = vec![2, 3, 4];
-    let cost = vec![3, 4, 3];
-    println!("gas: {:?}; cost: {:?}; can_complete_circuit: {}",
-             gas, cost, can_complete_circuit_naive(gas.clone(), cost.clone()));
-
-    let gas = vec![5, 1, 2, 3, 4];
-    let cost = vec![4, 4, 1, 5, 1];
-    println!("gas: {:?}; cost: {:?}; can_complete_circuit: {}",
-             gas, cost, can_complete_circuit_naive(gas.clone(), cost.clone()));
-
-    // Optimized cases
-    println!("Optimized Cases");
-    let gas = vec![1, 2, 3, 4, 5];
-    let cost = vec![3, 4, 5, 1, 2];
-    println!("gas: {:?}; cost: {:?}; can_complete_circuit: {}",
-             gas, cost, can_complete_circuit(gas.clone(), cost.clone()));
-
-    let gas = vec![2, 3, 4];
-    let cost = vec![3, 4, 3];
-    println!("gas: {:?}; cost: {:?}; can_complete_circuit: {}",
-             gas, cost, can_complete_circuit(gas.clone(), cost.clone()));
-
-    let gas = vec![5, 1, 2, 3, 4];
-    let cost = vec![4, 4, 1, 5, 1];
-    println!("gas: {:?}; cost: {:?}; can_complete_circuit: {}",
-             gas, cost, can_complete_circuit(gas.clone(), cost.clone()));
-}

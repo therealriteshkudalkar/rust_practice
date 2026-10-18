@@ -32,8 +32,3 @@ fn divisor_game(n: i32) -> bool {
     //println!("store: {:?}", store);
     store[n as usize]
 }
-
-pub fn main11() {
-    let n = 4;
-    println!("n: {n}; divisor_game: {}", divisor_game(n));
-}

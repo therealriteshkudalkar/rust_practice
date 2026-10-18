@@ -20,10 +20,3 @@ pub fn reverse_vowels(s: &String) -> String {
     }
     rev_str
 }
-
-pub fn main20() {
-    let str_test = String::from("hello");
-    println!("str_test: {str_test}, reverse_vowels: {}", reverse_vowels(&str_test));
-    let str_test = String::from("leetcode");
-    println!("str_test: {str_test}, reverse_vowels: {}", reverse_vowels(&str_test));
-}

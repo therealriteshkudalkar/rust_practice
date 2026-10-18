@@ -20,17 +20,3 @@ fn my_pow(x: f64, n: i32) -> f64 {
         res
     }
 }
-
-pub fn main62() {
-    let x = 2.0;
-    let n = 10;
-    assert_eq!(1024.0, my_pow(x, n));
-
-    let x = 2.1;
-    let n = 3;
-    assert_eq!(9.261000000000001, my_pow(x, n));
-
-    let x = 2.0;
-    let n = -2;
-    assert_eq!(0.250, my_pow(x, n));
-}

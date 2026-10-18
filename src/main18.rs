@@ -23,12 +23,3 @@ fn count_vowel_strings(n: i32) -> i32 {
     let vow_ar = vec!['a', 'e', 'i', 'o', 'u'];
     count_vowel_strings_for_character(&mut map, &vow_ar, 0, n)
 }
-
-pub fn main18() {
-    let n = 1;
-    println!("n: {n}, count_vowel_strings: {}", count_vowel_strings(n));
-    let n = 2;
-    println!("n: {n}, count_vowel_strings: {}", count_vowel_strings(n));
-    let n = 33;
-    println!("n: {n}, count_vowel_strings: {}", count_vowel_strings(n));
-}

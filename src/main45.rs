@@ -48,15 +48,3 @@ fn can_finish(num_courses: i32, prerequisites: Vec<Vec<i32>>) -> bool {
 
     return dependency_map.is_empty();
 }
-
-pub fn main45() {
-    let num_courses = 2;
-    let prerequisites = vec![vec![1, 0]];
-    println!("Number of courses: {num_courses}; Pre-requisites: {:?}; Can Finish: {}",
-             prerequisites, can_finish(num_courses, prerequisites.clone()));
-
-    let num_courses = 2;
-    let prerequisites = vec![vec![1, 0], vec![0, 1]];
-    println!("Number of courses: {num_courses}; Pre-requisites: {:?}; Can Finish: {}",
-             prerequisites, can_finish(num_courses, prerequisites.clone()));
-}

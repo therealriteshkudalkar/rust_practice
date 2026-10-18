@@ -23,14 +23,3 @@ fn can_jump(nums: Vec<i32>) -> bool {
     }
     return reachable_to_last_index[0];
 }
-
-pub fn main36() {
-    let nums = vec![2, 3, 1, 1, 4];
-    println!("nums: {:?}; can_jump: {}", nums, can_jump(nums.clone()));
-
-    let nums = vec![3, 2, 1, 0, 4];
-    println!("nums: {:?}; can_jump: {}", nums, can_jump(nums.clone()));
-
-    let nums = vec![2, 2, 1, 0, 4];
-    println!("nums: {:?}; can_jump: {}", nums, can_jump(nums.clone()));
-}

@@ -20,12 +20,3 @@ pub fn convert(s: String, nums_rows: i32) -> String {
     }
     return converted_string;
 }
-
-pub fn main51() {
-    let s = String::from("PAYPALISHIRING");
-    let num_rows = 3;
-    println!(
-        "s: {s}; num_rows: {num_rows}; converted_string: {}",
-        convert(s.clone(), num_rows)
-    );
-}

@@ -23,17 +23,3 @@ fn contains_nearby_duplicate(nums: &Vec<i32>, k: i32) -> bool {
     }
     return false;
 }
-
-pub fn main26() {
-    let vec = vec![1, 2, 3, 1];
-    let k = 3;
-    println!("vec: {:?}, k: {k}, contains_nearby_duplicate: {}", vec, contains_nearby_duplicate(&vec, k));
-
-    let vec = vec![1, 0, 1, 1];
-    let k = 1;
-    println!("vec: {:?}, k: {k}, contains_nearby_duplicate: {}", vec, contains_nearby_duplicate(&vec, k));
-
-    let vec = vec![1, 2, 3, 1, 2, 3];
-    let k = 1;
-    println!("vec: {:?}, k: {k}, contains_nearby_duplicate: {}", vec, contains_nearby_duplicate(&vec, k));
-}

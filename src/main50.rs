@@ -28,14 +28,3 @@ fn longest_common_prefix(strs: Vec<String>) -> String {
     }
     return prefix;
 }
-
-pub fn main50() {
-    let str_vec = vec![String::from("flower"), String::from("flow"), String::from("flight")];
-    println!("str_vec: {:?}; prefix: {:?}", str_vec.clone(), longest_common_prefix(str_vec));
-
-    let str_vec = vec![String::from("dog"), String::from("car"), String::from("racer")];
-    println!("str_vec: {:?}; prefix: {:?}", str_vec.clone(), longest_common_prefix(str_vec));
-
-    let str_vec = vec![String::from("man"), String::from("manipulative"), String::from("mandarin")];
-    println!("str_vec: {:?}; prefix: {:?}", str_vec.clone(), longest_common_prefix(str_vec));
-}

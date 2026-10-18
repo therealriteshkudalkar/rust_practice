@@ -44,18 +44,3 @@ fn can_be_increasing(nums: &Vec<i32>) -> bool {
     }
     false
 }
-
-pub fn main6() {
-    let nums = vec![1, 2, 10, 5, 7];
-    println!("nums: {:?}, can_be_increasing: {}", nums, can_be_increasing(&nums));
-    let nums = vec![2, 3, 1, 2];
-    println!("nums: {:?}, can_be_increasing: {}", nums, can_be_increasing(&nums));
-    let nums = vec![1, 1, 1];
-    println!("nums: {:?}, can_be_increasing: {}", nums, can_be_increasing(&nums));
-    let nums = vec![105, 924, 32, 968];
-    println!("nums: {:?}, can_be_increasing: {}", nums, can_be_increasing(&nums));
-    let nums = vec![512, 867, 904, 997, 403];
-    println!("nums: {:?}, can_be_increasing: {}", nums, can_be_increasing(&nums));
-    let nums = vec![13, 205, 553, 527, 790, 238];
-    println!("nums: {:?}, can_be_increasing: {}", nums, can_be_increasing(&nums));
-}

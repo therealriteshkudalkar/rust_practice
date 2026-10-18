@@ -19,8 +19,3 @@ fn tribonacci(n: i32) -> i32 {
     }
     d
 }
-
-pub fn main13() {
-    let n = 37;
-    println!("n: {n}; tribonacci: {}", tribonacci(n));
-}

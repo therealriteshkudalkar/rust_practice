@@ -49,8 +49,3 @@ fn eventual_safe_nodes(graph: Vec<Vec<i32>>) -> Vec<i32> {
     return_vec.sort();
     return return_vec;
 }
-
-pub fn main43() {
-    let graph = vec![vec![1, 2], vec![2, 3], vec![5], vec![0], vec![5], vec![], vec![]];
-    println!("Graph: {:?}; Eventual Safe Nodes: {:?}", graph, eventual_safe_nodes(graph.clone()))
-}

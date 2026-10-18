@@ -38,31 +38,3 @@ fn min_depth(root: Option<Rc<RefCell<TreeNode>>>) -> i32 {
         }
     }
 }
-
-pub fn main59() {
-    let tree_root = TreeNode::new(
-        3,
-        Some(TreeNode::new(9, None, None)),
-        Some(TreeNode::new(
-            20,
-            Some(TreeNode::new(15, None, None)),
-            Some(TreeNode::new(7, None, None)),
-        )),
-    );
-    println!("min_depth: {}", min_depth(Some(tree_root)));
-
-    let tree_root = TreeNode::new(
-        2,
-        None,
-        Some(TreeNode::new(
-            3,
-            None,
-            Some(TreeNode::new(
-                4,
-                None,
-                Some(TreeNode::new(5, None, Some(TreeNode::new(6, None, None)))),
-            )),
-        )),
-    );
-    println!("min_depth: {}", min_depth(Some(tree_root)));
-}

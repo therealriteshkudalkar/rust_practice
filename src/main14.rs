@@ -15,8 +15,3 @@ fn get_row(row_index: i32) -> Vec<i32> {
     }
     ith_vec
 }
-
-pub fn main14() {
-    let n = 10;
-    println!("n: {n}; get_row: {:?}", get_row(n));
-}

@@ -25,17 +25,3 @@ fn candy(ratings: Vec<i32>) -> i32 {
     }
     return markings.iter().sum();
 }
-
-pub fn main58() {
-    let ratings = vec![1, 0, 2];
-    assert_eq!(5, candy(ratings));
-
-    let ratings = vec![1, 2, 2];
-    assert_eq!(4, candy(ratings));
-
-    let ratings = vec![1, 2, 2, 3, 2, 4];
-    assert_eq!(9, candy(ratings));
-
-    let ratings = vec![1, 2, 87, 87, 87, 2, 1];
-    assert_eq!(13, candy(ratings));
-}

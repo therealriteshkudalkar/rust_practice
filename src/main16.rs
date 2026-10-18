@@ -22,14 +22,3 @@ fn get_maximum_generated(n: i32) -> i32 {
     }
     max
 }
-
-pub fn main16() {
-    let n = 7;
-    println!("n: {n}; get_maximum_generated: {}", get_maximum_generated(n));
-    let n = 2;
-    println!("n: {n}; get_maximum_generated: {}", get_maximum_generated(n));
-    let n = 3;
-    println!("n: {n}; get_maximum_generated: {}", get_maximum_generated(n));
-    let n = 100;
-    println!("n: {n}; get_maximum_generated: {}", get_maximum_generated(n));
-}

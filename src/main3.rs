@@ -36,14 +36,3 @@ fn is_valid(s: String) -> bool {
     }
     stack.is_empty()
 }
-
-pub fn main3() {
-    let s = String::from("()");
-    println!("s: {s}, is_valid: {}", is_valid(s.clone()));
-    let s = String::from("(()");
-    println!("s: {s}, is_valid: {}", is_valid(s.clone()));
-    let s = String::from("()[]{}");
-    println!("s: {s}, is_valid: {}", is_valid(s.clone()));
-    let s = String::from("(]");
-    println!("s: {s}, is_valid: {}", is_valid(s.clone()));
-}

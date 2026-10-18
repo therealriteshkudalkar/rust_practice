@@ -61,29 +61,3 @@ fn roman_to_int(s: String) -> i32 {
     }
     return sum;
 }
-
-pub fn main49() {
-    let s = String::from("III");
-    println!("roman: {s}; integer: {}", roman_to_int(s.clone()));
-
-    let s = String::from("IV");
-    println!("roman: {s}; integer: {}", roman_to_int(s.clone()));
-
-    let s = String::from("IX");
-    println!("roman: {s}; integer: {}", roman_to_int(s.clone()));
-
-    let s = String::from("XXXIX");
-    println!("roman: {s}; integer: {}", roman_to_int(s.clone()));
-
-    let s = String::from("XLIX");
-    println!("roman: {s}; integer: {}", roman_to_int(s.clone()));
-
-    let s = String::from("XCIX");
-    println!("roman: {s}; integer: {}", roman_to_int(s.clone()));
-
-    let s = String::from("LVIII");
-    println!("roman: {s}; integer: {}", roman_to_int(s.clone()));
-
-    let s = String::from("MCMXCIV");
-    println!("roman: {s}; integer: {}", roman_to_int(s.clone()));
-}

@@ -50,14 +50,3 @@ fn rob(nums: Vec<i32>) -> i32 {
     //return rob_houses(&nums, 0, false);
     return rob_houses_memoized(&nums, &mut HashMap::new(), 0, false);
 }
-
-pub fn main46() {
-    let nums = vec![1, 2, 3, 1];
-    println!("house_stash: {:?}; max_value: {}", nums, rob(nums.clone()));
-
-    let nums = vec![2, 7, 9, 3, 1];
-    println!("house_stash: {:?}; max_value: {}", nums, rob(nums.clone()));
-
-    let nums = vec![2, 1, 1, 2];
-    println!("house_stash: {:?}; max_value: {}", nums, rob(nums.clone()));
-}

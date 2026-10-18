@@ -18,15 +18,3 @@ fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
     }
     return k as i32;
 }
-
-pub fn main32() {
-    let mut vec1 = vec![1, 1, 1, 2, 2, 3];
-    print!("vec1: {:?}; ", vec1);
-    let k = remove_duplicates(&mut vec1);
-    println!("k: {k}; vec1: {:?}", vec1);
-
-    let mut vec1 = vec![0, 0, 0, 1, 1, 1, 1, 2, 3, 3];
-    print!("vec1: {:?}; ", vec1);
-    let k = remove_duplicates(&mut vec1);
-    println!("k: {k}; vec1: {:?}", vec1);
-}

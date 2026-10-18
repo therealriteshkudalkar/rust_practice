@@ -16,23 +16,3 @@ fn h_index(citations: Vec<i32>) -> i32 {
     }
     return h_index;
 }
-
-pub fn main38() {
-    let citations = vec![3, 0, 6, 1, 5];
-    println!("citations: {:?}; h_index: {}", citations, h_index(citations.clone()));
-
-    let citations = vec![1, 3, 1];
-    println!("citations: {:?}; h_index: {}", citations, h_index(citations.clone()));
-
-    let citations = vec![100];
-    println!("citations: {:?}; h_index: {}", citations, h_index(citations.clone()));
-
-    let citations = vec![0];
-    println!("citations: {:?}; h_index: {}", citations, h_index(citations.clone()));
-
-    let citations = vec![1];
-    println!("citations: {:?}; h_index: {}", citations, h_index(citations.clone()));
-
-    let citations = vec![7, 10, 10, 10];  // h_index = 4
-    println!("citations: {:?}; h_index: {}", citations, h_index(citations.clone()));
-}

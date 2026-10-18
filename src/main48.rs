@@ -29,26 +29,3 @@ fn reverse(x: i32) -> i32 {
     }
     return num;
 }
-
-pub fn main48() {
-    let x = 123;
-    println!("x: {x}; reverse: {}", reverse(x));
-
-    let x = -123;
-    println!("x: {x}; reverse: {}", reverse(x));
-
-    let x = 120;
-    println!("x: {x}; reverse: {}", reverse(x));
-
-    let x = -1534236469;
-    println!("x: {x}; reverse: {}", reverse(x));
-
-    let x = 1534236469;
-    println!("x: {x}; reverse: {}", reverse(x));
-
-    let x = i32::MIN;
-    println!("x: {x}; reverse: {}", reverse(x));
-
-    let x = i32::MAX;
-    println!("x: {x}; reverse: {}", reverse(x));
-}

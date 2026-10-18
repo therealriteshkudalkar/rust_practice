@@ -18,13 +18,3 @@ fn is_anagram(s: String, t: String) -> bool {
     // check if both maps have same keys and values
     return hm_s.eq(&hm_t);
 }
-
-pub fn main21() {
-    let s = String::from("anagram");
-    let t = String::from("naagram");
-    println!("s: {s}, t: {t}, is_anagram: {}", is_anagram(s.clone(), t.clone()));
-
-    let s = String::from("rat");
-    let t = String::from("car");
-    println!("s: {s}, t: {t}, is_anagram: {}", is_anagram(s.clone(), t.clone()));
-}

@@ -5,8 +5,11 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[[test]]
-name = "units_tests"
-path = "tests/*"
+# The interactive src/main.rs runner was removed, so the package now builds a
+# small library target instead. All test files under tests/ are discovered
+# automatically by Cargo and can run independently.
+[lib]
+name = "rust_practice"
+path = "src/lib.rs"
 
 [dependencies]

@@ -19,11 +19,3 @@ fn jump(nums: Vec<i32>) -> i32 {
     }
     return least_step[0];
 }
-
-pub fn main37() {
-    let nums = vec![2, 3, 1, 1, 4];
-    println!("nums: {:?}; jumps: {}", nums, jump(nums.clone()));
-
-    let nums = vec![2, 3, 0, 1, 4];
-    println!("nums: {:?}; jumps: {}", nums, jump(nums.clone()));
-}

@@ -24,14 +24,3 @@ fn max_product_difference(nums: &Vec<i32>) -> i32 {
     }
     return large1 * large2 - small1 * small2;
 }
-
-pub fn main27() {
-    let vec = vec![5, 6, 2, 7, 4];
-    println!("vec: {:?}, max_product_difference: {}", vec, max_product_difference(&vec));
-
-    let vec = vec![4, 2, 5, 9, 7, 4, 8];
-    println!("vec: {:?}, max_product_difference: {}", vec, max_product_difference(&vec));
-
-    let vec = vec![1, 1, 1, 1];
-    println!("vec: {:?}, max_product_difference: {}", &vec, max_product_difference(&vec));
-}

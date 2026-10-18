@@ -21,15 +21,3 @@ fn permute_unique(nums: Vec<i32>) -> Vec<Vec<i32>> {
     permutation_with_duplicate_numbers(&nums, &mut HashSet::new(), &mut collection, &mut Vec::new());
     return collection.into_iter().collect();
 }
-
-pub fn main64() {
-    let nums = vec![1, 1, 2];
-    assert_eq!(
-        vec![
-            vec![1,1,2],
-            vec![2,1,1],
-            vec![1,2,1],
-        ],
-        permute_unique(nums)
-    );
-}

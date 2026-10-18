@@ -43,19 +43,3 @@ fn find_circle_num(is_connected: Vec<Vec<i32>>) -> i32 {
 
     return count;
 }
-
-pub fn main42() {
-    // Test cases go here
-    let is_connected_vec = vec![vec![1, 1, 0], vec![1, 1, 0], vec![0, 0, 1]];
-    println!("is_connected_vec: {:?}; provinces: {:?}", is_connected_vec,
-             find_circle_num(is_connected_vec.clone()));
-
-    let is_connected_vec = vec![vec![1, 0, 0], vec![0, 1, 0], vec![0, 0, 1]];
-    println!("is_connected_vec: {:?}; provinces: {:?}", is_connected_vec,
-             find_circle_num(is_connected_vec.clone()));
-
-    let is_connected_vec = vec![vec![1, 0, 0, 1], vec![0, 1, 1, 0], vec![0, 1, 1, 1],
-                                vec![1, 0, 1, 1]];
-    println!("is_connected_vec: {:?}; provinces: {:?}", is_connected_vec,
-             find_circle_num(is_connected_vec.clone()));
-}
