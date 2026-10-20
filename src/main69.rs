@@ -14,7 +14,7 @@ pub fn is_match_rec(s: &Vec<char>, p: &Vec<char>, s_index: usize, p_index: usize
     } else if p_char == '*' {
         return is_match_rec(s, p, s_index + 1, p_index) || 
             is_match_rec(s, p, s_index + 1, p_index + 1) ||
-            is_match_rec(s, p, s_index, p_index + 1);
+            is_match_rec(s, p, s_index, p_index + 1)
     }
     false
 }
